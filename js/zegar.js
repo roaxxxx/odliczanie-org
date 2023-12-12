@@ -1,4 +1,6 @@
-    const deadlines = [
+//co jakis czas trzeba updateowac
+
+const deadlines = [
         { name: "Święta Bożego Narodzenia", date: "2023-12-24T00:00:00" },
         { name: "Nowy Rok", date: "2024-01-01T00:00:00" },
         { name: "Wielkanoc 2024", date: "2024-03-31T00:00:00" },
