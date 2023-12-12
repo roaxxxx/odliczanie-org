@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stwórz zegar 🗿</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input[type="text"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            background-color: #333;
+            color: #fff;
+        }
+
+        input[type="button"] {
+            cursor: pointer;
+            background-color: #007bff;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p style="color:grey"> Trwa aktualizacja API do nowej wersji.. </p>
+        <br>
+        <h2>Stwórz włany zegar</h2>
+        <br>
+        <br>
+        <form id="countdownForm">
+            <label for="name">Nazwa:</label>
+            <input type="text" id="name" name="name" required> <br>
+
+            <label for="time">Czas do którego ma być odliczane <p style="color:grey"> (przyklad: 2023-12-24T00:00:00) </p> :</label>
+            <input type="text" id="time" name="time" required> <br>
+
+            <label for="createdBy">Stworzony przez:</label>
+            <input type="text" id="createdBy" name="createdBy" required> <br>
+
+            <label for="emote">Emotka:</label>
+            <input type="text" id="emote" name="emote" required> <br>
+
+            <label for="music">Utwór w tle:</label>
+            <input type="text" id="music" name="music"> <br>
+
+            <label for="theme">Tło:</label>
+            <input type="text" id="theme" name="theme" required> <br>
+
+            <input type="button" value="Stwórz" onclick="generateLink()">
+        </form>
+        <p>
+          Donate - klinij <a href="https://tipply.pl/u/odliczanieorg"> tutaj </a>
+        </p>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function generateLink() {
+            const name = document.getElementById('name').value;
+            const time = document.getElementById('time').value;
+            const createdBy = document.getElementById('createdBy').value;
+            const emote = document.getElementById('emote').value;
+            const music = document.getElementById('music').value;
+            const theme = document.getElementById('theme').value;
+
+            const url = `https://odliczanie.org/view?name=${name}&time=${time}&createdBy=${createdBy}&emote=${emote}&music=${music}&theme=${theme}`;
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Wygenerowany link: <a href="${url}" target="_blank">${url}</a>`;
+        }
+    </script>
+</body>
+</html>
