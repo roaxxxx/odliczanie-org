@@ -6,7 +6,6 @@
 ![GitHub issues](https://img.shields.io/github/issues/roaxxxx/odliczanie-org)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/roaxxxx/odliczanie-org)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fodliczanie.org)
-![GitHub repo size](https://img.shields.io/github/repo-size/roaxxxx/odliczanie-org)
 ![GitHub Repo stars](https://img.shields.io/github/stars/roaxxxx/odliczanie-org)
 
 
